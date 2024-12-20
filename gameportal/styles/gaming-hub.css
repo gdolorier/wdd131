@@ -1,0 +1,316 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0044cc;
+    padding: 1rem 2rem;
+    color: white;
+  }
+  
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  #hamburger {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url("../images/banner.webp") no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content .cta-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #00cc44;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  
+  .featured-content,
+  .community-spotlight {
+    padding: 2rem;
+    background-color: #f4f4f4;
+  }
+  
+  .featured-content h2,
+  .community-spotlight h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #0044cc;
+  }
+  
+  .content-grid,
+  .spotlight-grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .content-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .content-item,
+  .spotlight-item {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content-item img,
+  .spotlight-item img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .content-item h3,
+  .spotlight-item h3 {
+    font-size: 1.25rem;
+    color: #0044cc;
+  }
+  
+  .content-item p,
+  .spotlight-item p {
+    margin: 0.5rem 0 1rem;
+  }
+  .content-item img {
+    width: 40%;
+  }
+  
+  .read-more {
+    color: #00cc44;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #0044cc;
+    color: white;
+    padding: 2rem;
+  }
+  
+  .footer-content {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .footer-content .quick-links,
+  .footer-content .social-media,
+  .footer-content .newsletter {
+    text-align: center;
+  }
+  
+  .footer-content h4 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+  
+  .footer-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-content ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-content ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-content form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .footer-content form input {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .footer-content form button {
+    padding: 0.5rem 1rem;
+    background-color: #00cc44;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .footer-content form button:hover {
+    background-color: #0033aa;
+  }
+  
+  /* Reviews Section */
+  .reviews-section {
+    padding: 2rem;
+    background-color: #f4f4f4;
+  }
+  
+  .reviews-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #0044cc;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .filters label {
+    font-weight: bold;
+  }
+  
+  .filters select {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .review-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .review-item {
+    background: white;
+  }
+  
+  .rating-image {
+    width: 100%;
+  }
+  
+  /* About Section */
+  .about-section {
+    padding: 2rem;
+    background-color: #f4f4f4;
+  }
+  
+  .about-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #0044cc;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .about-text {
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .about-text h3 {
+    margin-top: 1.5rem;
+    color: #0044cc;
+  }
+  
+  .about-text ul {
+    list-style-type: disc;
+    margin: 1rem 0;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .about-text ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Contact Page */
+  .contact-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-section h1 {
+    margin-top: 0;
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .contact-form button {
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0033aa;
+  }
